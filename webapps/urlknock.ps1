@@ -1,1 +1,2 @@
-$request = Invoke-WebRequest -Uri "https://ltgong.azurewebsites.net/"
+$ProgressPreference="SilentlyContinue"
+$request = Invoke-WebRequest -Uri "https://WebAppsのURL/" -UseBasicParsing

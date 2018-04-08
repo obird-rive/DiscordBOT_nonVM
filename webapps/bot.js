@@ -1,3 +1,15 @@
+var http = require('http');
+
+var server = http.createServer(function(request, response) {
+
+    response.writeHead(200, {"Content-Type": "text/plain"});
+    response.end("Discord Bot Activated.");
+
+});
+
+var port = process.env.PORT || 1337;
+server.listen(port);
+
 const Eris = require("eris");
 var bot = new Eris("DiscordAppで作成したBotのToken");
 bot.on("ready", () => {
